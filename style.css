@@ -1,0 +1,58 @@
+body {
+    background-color: #1a1a1a; /* Latar Belakang Gelap */
+    color: #f0f0f0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#app-container {
+    width: 90%;
+    max-width: 500px;
+    background-color: #311c1c; /* Background Card */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffcc00; /* Aksen Kuning Emas */
+    margin-bottom: 20px;
+}
+
+#meme-preview-container {
+    background-color: #4a2f2f; /* Background Gambar Meme */
+    border: 3px solid #ffcc00; /* Bingkai Emas */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#memeCanvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Styling Tombol */
+.control-btn, .wallet-btn {
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.control-btn { background-color: #7b4a4a; color: white; } 
+.control-btn.primary { background-color: #007bff; } /* Biru untuk NEGOTIATE */
+.control-btn.download { background-color: #28a745; } /* Hijau untuk DOWNLOAD */
+.wallet-btn { background-color: #ffcc00; color: #1a1a1a; margin-bottom: 20px; }
+
+.control-btn:hover, .wallet-btn:hover { opacity: 0.9; }
